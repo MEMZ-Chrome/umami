@@ -12,7 +12,7 @@ export function Favicon({ domain, ...props }) {
 
   const hostName = domain ? getHostName(domain) : null;
   const src = hostName
-    ? `https://https://favicon.cccyun.cc/${GROUPED_DOMAINS[hostName]?.domain || hostName}.ico`
+    ? `https://favicon.cccyun.cc/${GROUPED_DOMAINS[hostName]?.domain || hostName}.ico`
     : null;
 
   return hostName ? <img src={src} width={16} height={16} alt="" {...props} /> : null;
